@@ -9,10 +9,22 @@
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
     
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.contains('hidden');
+            
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
         });
         
         // Close mobile menu when clicking a link
@@ -20,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileLinks.forEach(link => {
             link.addEventListener('click', function() {
                 mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
             });
         });
     }
@@ -85,7 +99,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
             form.reset();
             successMsg.classList.remove('hidden');
             loadingMsg.classList.add('hidden');
-            submitBtn.textContent = 'Request Free Audit';
+            submitBtn.textContent = 'Schedule Free Audit';
             
             // Hide success message after 8 seconds
             setTimeout(() => {

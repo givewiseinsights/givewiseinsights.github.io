@@ -48,37 +48,40 @@
 <body class="antialiased">
 
     <!-- Header & Navigation -->
-    <header class="header-nav">
+    <header class="header-nav fixed top-0 left-0 right-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold logo-text">GiveWise Insights</h1>
-            <nav class="space-x-4 hidden md:flex">
+            <a href="#hero" class="text-2xl font-bold logo-text hover:text-primary-700 transition-colors">GiveWise Insights</a>
+            <nav class="space-x-6 hidden md:flex items-center">
                 <a href="#challenges" class="nav-link">Challenges</a>
                 <a href="#how-it-works" class="nav-link">How It Works</a>
                 <a href="#results" class="nav-link">Results</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="btn-primary-small">Free Audit</a>
+                <a href="#contact" class="btn-primary-small">Schedule Audit</a>
             </nav>
             <!-- Mobile menu button -->
-            <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-primary-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-primary-600 focus:outline-none" aria-label="Toggle menu">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
         </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
             <nav class="flex flex-col px-4 py-4 space-y-3">
-                <a href="#challenges" class="nav-link">Challenges</a>
-                <a href="#how-it-works" class="nav-link">How It Works</a>
-                <a href="#results" class="nav-link">Results</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#challenges" class="nav-link py-2">Challenges</a>
+                <a href="#how-it-works" class="nav-link py-2">How It Works</a>
+                <a href="#results" class="nav-link py-2">Results</a>
+                <a href="#about" class="nav-link py-2">About</a>
+                <a href="#contact" class="btn-primary-small text-center py-2">Schedule Audit</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-section">
+    <section id="hero" class="hero-section pt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -98,8 +101,8 @@
                         ✓ Community Organizations & Lodges
                     </p>
                 </div>
-                <div class="hero-image-placeholder">
-                    <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Diverse community members working together" class="rounded-lg shadow-2xl w-full h-auto">
+                <div class="hero-image-placeholder relative">
+                    <img src="https://images.squarespace-cdn.com/content/v1/548999f9e4b0e5cca16e8983/1542073149400-MTLM2CQ94ENLUDDJHFOX/achievement-blur-charity-1493374.jpg?format=1500w" alt="Community members working together for a cause" class="rounded-lg shadow-2xl w-full h-auto">
                 </div>
             </div>
         </div>
@@ -216,8 +219,8 @@
                     </div>
                 </div>
                 
-                <div>
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Analytics dashboard showing impact metrics" class="rounded-lg shadow-xl w-full h-auto">
+                <div class="relative">
+                    <img src="https://ucarecdn.com/dbed52cc-e3c2-4a5a-aaf4-3c991b4b311a/-/format/auto/-/quality/lighter/-/resize/1888x/insightsdashboardhero.png" alt="Analytics dashboard showing impact metrics and stewardship insights" class="rounded-lg shadow-xl w-full h-auto">
                 </div>
             </div>
         </div>
@@ -266,8 +269,11 @@
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-                <div class="lg:col-span-1">
-                    <img src="images/joseph-profile.jpg" alt="Joseph Jilovec - Founder of GiveWise Insights" class="about-image">
+                <div class="lg:col-span-1 relative">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200,h_812/https://trepwise.com/wp-content/uploads/2025/09/ZSMITH-2024-01-30-09889-HiRes-1200x812.jpg" alt="Consultant meeting with organization leaders" class="about-image">
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 opacity-20">
+                        <img src="https://www.vancopayments.com/hs-fs/hubfs/Tithes%20%26%20Offerings%20Wood%20Bin%20-How%20to%20Blog.png?width=940&height=668&name=Tithes%20%26%20Offerings%20Wood%20Bin%20-How%20to%20Blog.png" alt="Stewardship accent" class="w-full h-full object-cover rounded-lg">
+                    </div>
                 </div>
                 
                 <div class="lg:col-span-2">
