@@ -2,7 +2,7 @@
 
 Professional landing page for predictive donor analytics consulting services targeting nonprofits, churches, and community organizations.
 
-**Live Site:** `https://josephjilovec.github.io/givewiseinsights.github.io`
+**Live Site:** `https://givewiseinsights.github.io`
 
 ---
 
