@@ -243,8 +243,8 @@ The contact form uses FormSubmit.co (free, no signup required).
 
 1. **Google Search Console:**
    - Go to [search.google.com/search-console](https://search.google.com/search-console)
-   - Add property: `https://josephjilovec.github.io/givewiseinsights.github.io`
-   - Submit sitemap: `https://josephjilovec.github.io/givewiseinsights.github.io/sitemap.xml`
+   - Add property: `https://givewiseinsights.github.io`
+   - Submit sitemap: `https://givewiseinsights.github.io/sitemap.xml`
 
 2. **Bing Webmaster Tools:**
    - Go to [bing.com/webmasters](https://www.bing.com/webmasters)
