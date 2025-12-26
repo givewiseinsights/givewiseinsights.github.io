@@ -111,6 +111,8 @@ html {
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 0.95rem;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 .nav-link:hover {
