@@ -1,6 +1,6 @@
 /* ============================================
-   STEWARDSHIP ANALYTICS - CUSTOM STYLES
-   Professional, trust-building design for nonprofits
+   GIVEWISE INSIGHTS - CUSTOM STYLES
+   Trustworthy, calm, mission-aligned design
    ============================================ */
 
 /* Import Professional Font */
@@ -8,9 +8,10 @@
 
 /* ============================================
    CSS CUSTOM PROPERTIES (THEME COLORS)
+   Soft blues, greens, and whites
    ============================================ */
 :root {
-    /* Primary Colors - Trust & Professionalism */
+    /* Primary Colors - Soft Blues (Trust & Calm) */
     --primary-50: #f0f9ff;
     --primary-100: #e0f2fe;
     --primary-200: #bae6fd;
@@ -22,7 +23,7 @@
     --primary-800: #075985;
     --primary-900: #0c4a6e;
     
-    /* Accent Colors - Calm Green for Growth/Impact */
+    /* Accent Colors - Soft Greens (Growth & Stewardship) */
     --accent-50: #f0fdf4;
     --accent-100: #dcfce7;
     --accent-200: #bbf7d0;
@@ -51,10 +52,10 @@
     --section-padding: 5rem 0;
     --container-max: 1280px;
     
-    /* Shadows */
+    /* Shadows - Softer for calm feel */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,7 +71,7 @@
 body {
     font-family: var(--font-sans);
     color: var(--gray-800);
-    line-height: 1.6;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: white;
@@ -85,16 +86,16 @@ html {
    ============================================ */
 .header-nav {
     background: white;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid var(--primary-100);
+    border-bottom: 1px solid var(--gray-100);
 }
 
 .logo-text {
     color: var(--primary-700);
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.5px;
 }
 
@@ -131,7 +132,7 @@ html {
    HERO SECTION
    ============================================ */
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-50) 0%, white 100%);
+    background: linear-gradient(135deg, var(--primary-50) 0%, white 50%, var(--accent-50) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -144,7 +145,7 @@ html {
     width: 70%;
     height: 200%;
     background: radial-gradient(circle, var(--primary-100) 0%, transparent 70%);
-    opacity: 0.3;
+    opacity: 0.2;
     pointer-events: none;
 }
 
@@ -210,13 +211,13 @@ html {
     font-size: 1.1rem;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(2, 132, 199, 0.2);
+    box-shadow: 0 4px 6px rgba(2, 132, 199, 0.15);
 }
 
 .btn-primary:hover {
     background: var(--primary-700);
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(2, 132, 199, 0.3);
+    box-shadow: 0 6px 12px rgba(2, 132, 199, 0.2);
 }
 
 .btn-secondary {
@@ -316,7 +317,7 @@ html {
     font-size: 1.75rem;
     font-weight: 800;
     margin: 0 auto 1.5rem;
-    box-shadow: 0 4px 6px rgba(2, 132, 199, 0.3);
+    box-shadow: 0 4px 6px rgba(2, 132, 199, 0.25);
 }
 
 .process-title {
@@ -342,6 +343,7 @@ html {
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
     border-left: 4px solid var(--primary-500);
+    margin-bottom: 1rem;
 }
 
 .benefit-card:hover {
@@ -365,43 +367,6 @@ html {
 .benefit-description {
     color: var(--gray-600);
     line-height: 1.7;
-}
-
-/* ============================================
-   ROI HIGHLIGHT BOX
-   ============================================ */
-.roi-highlight {
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
-    padding: 3rem;
-    border-radius: 1rem;
-    margin-top: 3rem;
-    text-align: center;
-    color: white;
-    box-shadow: var(--shadow-xl);
-}
-
-.roi-title {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
-
-.roi-stat {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 2rem;
-    border-radius: 0.75rem;
-    backdrop-filter: blur(10px);
-}
-
-.roi-number {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-}
-
-.roi-label {
-    font-size: 1rem;
-    opacity: 0.95;
 }
 
 /* ============================================
@@ -595,14 +560,6 @@ html {
     .contact-form {
         padding: 2rem;
     }
-    
-    .roi-highlight {
-        padding: 2rem;
-    }
-    
-    .roi-number {
-        font-size: 2.5rem;
-    }
 }
 
 /* ============================================
@@ -611,4 +568,3 @@ html {
 .hidden {
     display: none !important;
 }
-
