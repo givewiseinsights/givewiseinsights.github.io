@@ -1,25 +1,36 @@
 # GiveWise Insights
 
-Public website for GiveWise Insights, an independent AI and technology advisory and a trade name of Jentlemens LLC. Based in Mesa, Arizona; serving companies nationwide.
+Public website for GiveWise Insights, a trade name of Jentlemens LLC based in Mesa, Arizona. The primary audience is owner-run Phoenix-area businesses, beginning with healthcare practices and professional services.
 
-## Offer
+## Public offers
 
-- Free AI opportunity review: a 30-minute call and a one-page opportunity list.
-- Works-With-What-You-Have AI Plan: $1,500 USD once, one operating team and up to two candidate workflows. Includes a working session, workflow and systems review, and written priorities, cost/benefit assumptions, data preparation, human approval rules, and a testing/handoff plan.
-- Scope, exclusions, information needs, and delivery schedule are confirmed in writing before paid work begins. Development, integrations, software subscriptions, ongoing operations, and legal/security/compliance reviews are separate.
+| Offer | Price in USD | Delivery boundary |
+| --- | --- | --- |
+| 30-minute AI opportunity call | $75 once | One focused question, next steps, and a short written recap |
+| 60-minute working session | $250 once | Deeper review of one process and a focused action list; scheduled by agreement |
+| Scoped administrative automation build | $1,500–$5,000 per project | Exact workflow, access, testing, handoff, acceptance, revisions, and timing defined in a written quote |
+| Optional monthly upkeep | $500–$1,500 per month | Covered workflows, checks, service hours, response targets, changes, and exclusions defined in writing |
+| Optional Works-With-What-You-Have AI Plan | $1,500 once | Working session, systems/workflow review, and written readiness recommendations; advisory only |
 
-Checkout: https://buy.stripe.com/3cI6oH6R6dddbLN3Ij1Fe0c
+These are GiveWise's chosen prices and quoted ranges, not claims about market averages or proven profitability. Development and upkeep exclude software subscriptions, usage charges, and substantial additional work unless expressly quoted. Every paid phase needs an agreed scope.
 
-The supplied Stripe link was checked against the product name and one-time $1,500 USD price. Its merchant display name and the existing 30-minute Google Calendar booking page are controlled outside this repository. No payment, booking, or account-setting changes were made.
+## Scheduling and checkout
 
-## Site
+The existing Google Calendar link offers 30-minute appointments and its booking form has only first name, last name, and email; no notes field was observed. Website copy makes the $75 fee explicit. Session payment is arranged separately before delivery. The initial call is the booking entry point for the new ladder; a follow-on 60-minute session or a project/support scope is arranged directly afterward. The calendar does not automatically reserve an hour. No new $75 or $250 checkout links have been invented or configured. No appointment was submitted during form inspection.
 
-Buildless HTML, CSS, and a small print helper. The homepage's sample and the printable `sample-ai-plan.html` are fictional examples, not client work, measured savings, or readiness scores. The original SVG assets remain in the repository; the redesign makes the advisory deliverable itself the principal visual.
+The supplied Stripe link remains exclusively for the $1,500 **advisory readiness plan**:
+https://buy.stripe.com/3cI6oH6R6dddbLN3Ij1Fe0c
 
-- `index.html`: buyer, free review, paid offer, example, process, business identity, FAQ, and next step.
-- `sample-ai-plan.html`: one-page illustrative plan with browser print/save-PDF support.
-- `styles.css`: responsive and print styles; reduced-motion support.
-- `script.js`: enables the sample print button; core navigation, purchase links, booking links, and FAQ work without JavaScript.
-- `vercel.json`: existing deployment and response headers retained.
+It must not be described as a $75 call, a $250 session, or a build purchase. Stripe merchant and Google Calendar branding/settings are controlled outside this repository. No payment, appointment, or account-setting change was performed.
 
-No diagnostic scoring, customer upload form, account system, payment processing, booking backend, or analytics is implemented here. Booking uses the existing Google Calendar link; payment uses the supplied hosted Stripe checkout. Private business plans and operating documents belong in the private venture repository, not this public site.
+## Service boundaries
+
+Initial practice examples concern administrative work without patient information. Sensitive-data projects require separate review, appropriate agreements, controls, and permission before access. The website does not claim clinical decision-making or HIPAA certification.
+
+Software/telecom cost review is secondary, with any shared-savings terms separately agreed against documented net savings. No telecom savings percentage, proven monthly market rate, LinkedIn buyer-engagement statistic, client outcome, or measured ROI is asserted.
+
+## Implementation
+
+Buildless HTML/CSS with a small sample print helper. Native links and FAQ disclosures work without JavaScript. `sample-ai-plan.html` remains a clearly labeled fictional professional-services example. Original SVG assets and existing Vercel response headers are preserved. Metadata uses the branded canonical domain.
+
+Private strategy, economics, source evaluation, qualification, build/support planning, and savings-measurement documents are maintained in the private venture repository. They are not imported into this public site.
